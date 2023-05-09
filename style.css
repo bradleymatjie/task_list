@@ -1,0 +1,82 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:url(https://i.pinimg.com/564x/ab/fb/36/abfb361e405a15980f0a0f65b2273443.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+
+}
+
+body > div {
+  width: 35%;
+  height: 350px;
+  padding: 10px;
+  box-shadow: 1px 1px 5px 1px #252525;
+  position: relative;
+}
+
+.buttons-container > button {
+  height: 35px;
+  padding: 0 5px;
+  border: none;
+  cursor: pointer;
+  transition: 1s all;
+}
+
+.buttons-container > button:hover {
+  background-color: #252525;
+  color: aliceblue;
+}
+
+input:focus {
+  background-color: transparent;
+  border: none;
+}
+
+input {
+  height: 30px;
+  width: 35%;
+  color: whitesmoke;
+}
+
+.task {
+  border-top: 1px solid #252525;
+  border-bottom: 1px solid #252525;
+  margin: 20px;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.task::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.task::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.task::-webkit-scrollbar-thumb {
+  background: #252525;
+  border-radius: 10px;
+}
+
+#list li {
+  border: 1px solid whitesmoke;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 50%;
+  border-radius: 20px;
+  background-color: #252525;
+  color: whitesmoke;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 10px;
+}
